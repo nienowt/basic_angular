@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div ng-controller="GuestController as guest">
+      <h1>Welcome {{guest.name}}, this is life now.</h1>
+      <input ng-model="guest.name">
+      <button ng-click="guest.click()">Delete</button>
+    </div>
+
+    <script src="./bundle.js"></script>
+  </body>
+</html>
